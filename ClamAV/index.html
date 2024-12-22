@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Network File Scanner</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 50%; margin: 0 auto; padding: 20px; }
+        .input-box { margin-top: 20px; }
+        .input-box input { width: 100%; padding: 10px; }
+        .input-box button { padding: 10px; margin-top: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Home Network File Scanner</h1>
+        <div class="input-box">
+            <h3>Scan a File</h3>
+            <form method="POST" action="/scan" enctype="multipart/form-data">
+                <input type="file" name="file"><br>
+                <button type="submit">Scan File</button>
+            </form>
+        </div>
+        <div class="input-box">
+            <h3>Scan a Directory</h3>
+            <form method="POST" action="/scan_directory">
+                <input type="text" name="directory_path" placeholder="Enter directory path"><br>
+                <button type="submit">Scan Directory</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
