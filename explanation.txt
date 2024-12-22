@@ -1,0 +1,36 @@
+Explanation
+Database Code (scanner.py):
+
+scan_file(file_path): Scans a single file using ClamAV.
+
+scan_directory(directory_path): Scans all files in a directory using ClamAV.
+
+Flask App Code (app.py):
+
+home(): Renders the main HTML page.
+
+scan(): Handles file upload, scans the file, and returns the result.
+
+scan_directory(): Scans a directory and returns the result.
+
+HTML Templates:
+
+index.html: Provides the user interface for uploading files and entering directory paths.
+
+results.html: Displays the scan results.
+
+
+Start the clamAV Daemon:
+
+sudo service clamav-daemon start
+
+Start the Flask App:
+
+python app.py
+
+Access the Web Interface:
+
+Open your web browser and navigate to http://127.0.0.1:5000/.
+
+This will open a web interface where you can upload files or specify directories to scan for viruses and corrupted files.
+
