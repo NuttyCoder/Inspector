@@ -1,0 +1,23 @@
+Database Code (database.py):
+
+init_db(): Initializes the database and creates users and device_logs tables if they don't exist.
+
+add_user(username): Adds a new user to the users table.
+
+log_device_use(user_id, device, date_of_use, time_of_use): Logs device usage in the device_logs table.
+
+get_users() and get_logs(): Fetch users and device logs from the database.
+
+Admin GUI Code (admin_gui.py):
+
+AdminGUI class: Defines the GUI for the admin panel using tkinter.
+
+refresh_users_list() and refresh_logs_list(): Refresh the lists displayed in the GUI.
+
+add_user(): Adds a new user through the GUI and updates the user list.
+
+Files to Run --------------------->
+
+python database.py
+
+python.admin_gui.py
