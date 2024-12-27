@@ -1,0 +1,42 @@
+body, .card-body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.card-body{
+    padding: 20px;
+    color:#083272;
+}
+a.btn.btn-primary {
+    background-color: #083272;
+    border-color: #083272;
+    color: white;
+}
+a.btn.btn-primary:hover {
+    background-color: #5b96f0;
+    border-color: #5b96f0;
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
